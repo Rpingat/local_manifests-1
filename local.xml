@@ -5,8 +5,10 @@
   <remove-project name="android_frameworks_base" />
   <remove-project name="android_bionic" />
   <remove-project name="android_frameworks_av" />
+  <remove-project name="android_frameworks_native" />
   <remove-project name="android_build_soong" />
   <project name="nostumato/android_build_soong" path="build/soong" remote="github" revision="o" />
+  <project name="nostumato/android_frameworks_native" path="frameworks/native" remote="github" revision="o" />
   <project name="nostumato/android_frameworks_av" path="frameworks/av" remote="github" revision="o" />
   <project name="nostumato/android_frameworks_base" path="frameworks/base" remote="github" revision="o" />
   <project name="nostumato/android_bionic" path="bionic" remote="github" revision="o" />
@@ -20,50 +22,47 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <project name="nostumato/android_vendor_nitrogen" path="vendor/nitrogen" remote="github" revision="o" />
-  <project name="shekhawat2/android_device_yu_tomato" path="device/yu/tomato" remote="github" revision="nos" />
+  <project name="shekhawat2/android_device_yu_tomato" path="device/yu/tomato" remote="github" revision="test" />
   <project name="shekhawat2/android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="github" revision="test" />
-  <project name="shekhawat2/KCUFKernel" path="kernel/cyanogen/msm8916" remote="github" revision="o" />
+  <project name="shekhawat2/KCUFKernel" path="kernel/cyanogen/msm8916" remote="github" revision="o-temp" />
   <project name="shekhawat2/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-14.1" />
   <project name="shekhawat2/proprietary_vendor_yu" path="vendor/yu" remote="github" revision="test" />
 
-  <project name="GZOSP/device_qcom_sepolicy" path="device/qcom/sepolicy" remote="github" revision="8.0" />
+<!--  <project name="GZOSP/device_qcom_sepolicy" path="device/qcom/sepolicy" remote="github" revision="8.0" /> -->
 
   <remove-project name="platform/hardware/qcom/wlan" />
-  <remove-project name="platform/hardware/qcom/gps" />
-  <remove-project name="platform/hardware/qcom/display" />
-  <remove-project name="platform/hardware/qcom/media" />
-  <remove-project name="platform/hardware/qcom/audio" />
   <remove-project name="platform/hardware/qcom/keymaster" />
-  <remove-project name="platform/hardware/ril" />
   <remove-project name="platform/hardware/qcom/power" />
-  <remove-project name="platform/external/tinycompress" />
-  <remove-project name="platform/hardware/libhardware" />
-  <remove-project name="platform/system/media" />
   <remove-project name="android_system_bt" />
+  <remove-project name="platform/system/media" />
+  <remove-project name="android_system_sepolicy" />
+  <remove-project name="platform/hardware/qcom/gps" />
+  <remove-project name="platform/hardware/ril" />
+<!--  <remove-project name="android_vendor_qcom_opensource_fm" /> -->
   <project name="GZOSP/hardware_ril" path="hardware/ril-caf" remote="github" revision="8.0-caf" />
-  <project name="ROM-FIXES/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8916" remote="github" revision="lineage-15.0-caf-8916" />
+  <project name="GZOSP/hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8916" remote="github" revision="8.0-caf-8916" />
   <project name="GZOSP/hardware_qcom_display" path="hardware/qcom/display-caf/msm8916" remote="github" revision="8.0-caf-8916" />
   <project name="GZOSP/hardware_qcom_keymaster" path="hardware/qcom/keymaster" remote="github" revision="8.0" />
-  <project name="ROM-FIXES/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8916" remote="github" revision="lineage-15.0-caf-8916" />
-  <project name="GZOSP/hardware_qcom_bt" path="hardware/qcom/bt-caf" remote="github" revision="8.0-caf-new" />
-  <project name="LineageOS/android_hardware_qcom_fm" path="hardware/qcom/fm" remote="github" revision="lineage-15.0" />
-  <project name="LineageOS/android_hardware_qcom_gps" path="hardware/qcom/gps" remote="github" revision="lineage-15.0" />
+  <project name="GZOSP/hardware_qcom_media" path="hardware/qcom/media-caf/msm8916" remote="github" revision="8.0-caf-8916" />
+  <project name="GZOSP/hardware_qcom_bt" path="hardware/qcom/bt-caf" remote="github" revision="8.0-caf" />
+<!--  <project name="GZOSP/hardware_qcom_fm" path="hardware/qcom/fm" remote="github" revision="8.1" />-->
+  <project name="GZOSP/hardware_qcom_gps" path="hardware/qcom/gps" remote="github" revision="8.0" />
 
   <project name="GZOSP/hardware_qcom_power" path="hardware/qcom/power" remote="github" revision="8.0" />
-  <project name="ROM-FIXES/android_hardware_libhardware" path="hardware/libhardware" remote="github" revision="lineage-15.0" />
+<!--  <project name="ROM-FIXES/android_hardware_libhardware" path="hardware/libhardware" remote="github" revision="lineage-15.0" /> -->
 
+  <project name="nostumato/android_system_sepolicy" path="system/sepolicy" remote="github" revision="o" />
   <project name="nostumato/android_system_bt" path="system/bt" remote="github" revision="o" />
-  <project name="GZOSP/system_media" path="system/media" remote="github" revision="8.0" />
-  <project name="GZOSP/external_tinycompress" path="external/tinycompress" remote="github" revision="8.0" />
+  <project name="nostumato/android_system_media" path="system/media" remote="github" revision="o" />
+<!--  <project name="GZOSP/external_tinycompress" path="external/tinycompress" remote="github" revision="8.0" />
   <project name="GZOSP/vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="github" revision="8.0" />
-  <project name="GZOSP/vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="github" revision="8.0" />
-  <project name="GZOSP/vendor_qcom_opensource_cryptfs_hw" path="vendor/qcom/opensource/cryptfs_hw" remote="github" revision="8.0" /> 
-  <project name="GZOSP/vendor_codeaurora_telephony" path="vendor/codeaurora/telephony" remote="github" revision="8.0" />
-<!--  <remove-project name="LineageOS/android_system_bt" />
+  <project name="GZOSP/vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="github" revision="8.0" /> -->
+  <project name="GZOSP/vendor_qcom_opensource_cryptfs_hw" path="vendor/qcom/opensource/cryptfs_hw" remote="github" revision="8.1" /> 
+<!--  <project name="GZOSP/vendor_codeaurora_telephony" path="vendor/codeaurora/telephony" remote="github" revision="8.0" />
+  <remove-project name="LineageOS/android_system_bt" />
   <remove-project name="platform_packages_services_Telephony" /> -->
   <remove-project name="android_system_core" />
   <remove-project name="android_packages_apps_Settings" />
-  <remove-project name="platform/packages/providers/DownloadProvider" />
 
   <project name="nostumato/android_system_core" path="system/core" remote="github" revision="o" />
   <project name="GZOSP/system_qcom" path="system/qcom" remote="github" revision="8.0" />
@@ -73,14 +72,13 @@
   <project name="GZOSP/external_libnetfilter_conntrack" path="external/libnetfilter/conntrack" remote="github" revision="8.0" />
 
   <project path="packages/apps/SnapdragonCamera" name="AOSP-JF-MM/packages_apps_SnapdragonCamera" remote="github" revision="aosp-8.0-test" />
-  <project path="packages/apps/FMRadio" name="LineageOS/android_packages_apps_FMRadio" remote="github" revision="lineage-15.0" />
+<!--  <project path="packages/apps/FMRadio" name="GZOSP/packages_apps_FMRadio" remote="github" revision="8.1" />-->
   <project path="packages/apps/NitrogenOTA" name="nitrogen-project/android_packages_apps_NitrogenOTA" remote="github" revision="n2" />
   <project path="packages/apps/Settings" name="nostumato/android_packages_apps_Settings" remote="github" revision="o" />
-  <project path="packages/apps/DownloadProvder" name="nostumato/android_packages_providers_DownloadProvider" remote="github" revision="o" />
-
+  <project path="packages/apps/SlimRecents" name="nostumato/android_packages_apps_SlimRecents" remote="github" revision="o" />
 <!--  <remove-project name="platform/external/wpa_supplicant_8" />
   <project name="shekhawat2/android_system_bt" path="system/bt" remote="github" revision="lineage-15.0" /> -->
-  <project name="shekhawat2/android_hardware_qcom_wlan" path="hardware/qcom/wlan-caf" remote="github" revision="o" />
+  <project name="GZOSP/hardware_qcom_wlan" path="hardware/qcom/wlan-caf" remote="github" revision="8.0-caf" />
   <project name="LineageOS/android_hardware_cyanogen" path="hardware/cyanogen" remote="github" revision="lineage-15.0" />
 <!--  <project name="AEXBEX/platform_packages_services_Telephony" path="packages/services/Telephony" remote="github" revision="8.x" />
   <project name="LineageOS/android_external_wpa_supplicant_8" path="external/wpa_supplicant_8" revision="cm-14.1" remote="github" /> -->
