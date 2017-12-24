@@ -22,11 +22,11 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <project name="nostumato/android_vendor_nitrogen" path="vendor/nitrogen" remote="github" revision="o2" />
-  <project name="shekhawat2/android_device_yu_tomato" path="device/yu/tomato" remote="github" revision="test" />
-  <project name="shekhawat2/android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="github" revision="test" />
-  <project name="shekhawat2/KCUFKernel" path="kernel/cyanogen/msm8916" remote="github" revision="o-temp" />
   <project name="shekhawat2/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-14.1" />
-  <project name="shekhawat2/proprietary_vendor_yu" path="vendor/yu" remote="github" revision="test" />
+
+  <project name="shekhawat2/android_device_xiaomi_land" path="device/xiaomi/land" remote="github" revision="nos" />
+  <project name="shekhawat2/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="lineage-15.0-land" />
+  <project name="shekhawat2/android_kernel_xiaomi_msm8937" path="kernel/xiaomi/msm8937" remote="github" revision="lineage-15.1" />
 
 <!--  <project name="GZOSP/device_qcom_sepolicy" path="device/qcom/sepolicy" remote="github" revision="8.0" /> -->
 
@@ -37,12 +37,16 @@
   <remove-project name="android_system_media" />
   <remove-project name="android_system_sepolicy" />
   <remove-project name="android_hardware_ril" />
+  <remove-project name="android_vendor_codeaurora_telephony" />
 <!--  <remove-project name="android_vendor_qcom_opensource_fm" /> -->
   <project name="GZOSP/hardware_ril" path="hardware/ril-caf" remote="github" revision="8.1-caf" />
   <project name="GZOSP/hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8916" remote="github" revision="8.1-caf-8916" />
+  <project name="nostumato/hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8937" remote="github" revision="8.1-caf-8937" />
   <project name="GZOSP/hardware_qcom_display" path="hardware/qcom/display-caf/msm8916" remote="github" revision="8.1-caf-8916" />
+  <project name="nostumato/hardware_qcom_display" path="hardware/qcom/display-caf/msm8937" remote="github" revision="8.1-caf-8937" />
   <project name="GZOSP/hardware_qcom_keymaster" path="hardware/qcom/keymaster" remote="github" revision="8.1" />
   <project name="GZOSP/hardware_qcom_media" path="hardware/qcom/media-caf/msm8916" remote="github" revision="8.1-caf-8916" />
+  <project name="GZOSP/hardware_qcom_media" path="hardware/qcom/media-caf/msm8937" remote="github" revision="8.1-caf-8937" />
   <project name="GZOSP/hardware_qcom_bt" path="hardware/qcom/bt-caf" remote="github" revision="8.1-caf" />
 <!--  <project name="GZOSP/hardware_qcom_fm" path="hardware/qcom/fm" remote="github" revision="8.1" />-->
   <project name="GZOSP/hardware_qcom_gps" path="hardware/qcom/gps" remote="github" revision="8.1" />
