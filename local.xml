@@ -7,7 +7,10 @@
   <remove-project name="android_frameworks_av" />
   <remove-project name="android_frameworks_native" />
   <remove-project name="android_build_soong" />
-  <project name="nostumato/android_build_soong" path="build/soong" remote="github" revision="o2" />
+  <project name="nostumato/android_build_soong" path="build/soong" remote="github" revision="o2" >
+     <linkfile src="root.bp" dest="Android.bp" />
+     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project> 
   <project name="nostumato/android_frameworks_native" path="frameworks/native" remote="github" revision="o2" />
   <project name="nostumato/android_frameworks_av" path="frameworks/av" remote="github" revision="o2" />
   <project name="nostumato/android_frameworks_base" path="frameworks/base" remote="github" revision="o2" />
